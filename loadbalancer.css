@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo");
+@font-face {
+  font-family: gessLight;
+  src: url(../fonts/ArbFONTS-GE_SS_Unique_Light_1.otf);
+}
+@font-face {
+  font-family: gessBold;
+  src: url(../fonts/ArbFONTS-GE_SS_Unique_Bold_5.otf);
+}
+* {
+  -webkit-box-sizing:  border-box;
+  -ms-box-sizing:  border-box;
+  -moz-box-sizing:  border-box;
+  -o-box-sizing:  border-box;
+  box-sizing:  border-box;
+}
+
+/* loadbalancer style code */
+.balancer-outer-wrapper {
+  position: relative;
+}
+.balancer-outer-wrapper .balancer-inner-wrapper {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  left: 15px;
+  padding: 10px;
+  border: 0.5px solid #dedede;
+  z-index: 9999;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.balancer-outer-wrapper .balancer-inner-wrapper header {
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #dedede;
+}
+.balancer-outer-wrapper .balancer-data-wrapper {
+  height: 260px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 8px;
+}
+.balancer-outer-wrapper .balancer-item {
+  width: 100%;
+  padding: 5px 8px;
+  color: #333;
+  font-family: "Cairo", sans-serif;
+  font-size: 12px;
+  text-align: right;
+  cursor: pointer;
+  display: block;
+}
+.balancer-outer-wrapper .balancer-item:hover {
+  background-color: #151965;
+  color: white;
+}
+.balancer-outer-wrapper .balancer-item.active-item {
+  background-color: #151965;
+  color: white;
+}
+
+/*# sourceMappingURL=loadbalance.css.map */
