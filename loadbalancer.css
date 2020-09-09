@@ -19,6 +19,15 @@
 .balancer-outer-wrapper {
   position: relative;
 }
+.balancer-outer-wrapper .caretIcon {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  color: #a1a1a1;
+}
+.balancer-outer-wrapper .balancer-main-input {
+  cursor: pointer;
+}
 .balancer-outer-wrapper .balancer-inner-wrapper {
   display: none;
   position: absolute;
@@ -30,12 +39,21 @@
   width: 280px;
   overflow: hidden;
   border-radius: 5px;
+  background-color: white;
 }
 .balancer-outer-wrapper .balancer-inner-wrapper header {
   padding-bottom: 10px;
   border-bottom: 0.5px solid #dedede;
+  position: relative;
 }
-.balancer-outer-wrapper .balancer-data-wrapper {
+.balancer-outer-wrapper .balancer-inner-wrapper header .closeSearch {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+  color: #a1a1a1;
+  cursor: pointer;
+}
+.balancer-outer-wrapper .balancer-data-wrapper, .balancer-outer-wrapper .balancer-results-wrapper {
   height: 260px;
   overflow-x: hidden;
   overflow-y: scroll;
