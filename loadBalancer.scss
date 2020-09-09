@@ -109,6 +109,17 @@ $ph-form-styles: ( font-family: $gesLight-font, color: $main-color );
 .balancer-outer-wrapper {
     position: relative;
 
+    .caretIcon {
+        position: absolute;
+        left: 32px;
+        top: 32px;
+        color: $listmenu-color;
+    }
+
+    .balancer-main-input {
+        cursor: pointer;
+    }
+
     .balancer-inner-wrapper {
         display: none;
         position: absolute;
@@ -120,10 +131,19 @@ $ph-form-styles: ( font-family: $gesLight-font, color: $main-color );
         width: 280px;
         overflow: hidden;
         border-radius: 5px;
+        background-color: white;
 
         header {
             padding-bottom: 10px;
             border-bottom: 0.5px solid $font-menu-color;
+            position: relative;
+            .closeSearch {
+                position:absolute;
+                left:15px;
+                top:9px;
+                color:$listmenu-color;
+                cursor:pointer;
+            }
         }
     }
 
